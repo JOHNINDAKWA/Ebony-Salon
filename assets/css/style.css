@@ -265,8 +265,9 @@ body.active { overflow: hidden; }
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 100px;
   gap: 3px;
-  padding: 10px 14px;
+  padding: 6px 10px;
   border: 2px dotted var(--tan-crayola);
   border-radius: 20px;
   color: var(--tan-crayola);
@@ -528,6 +529,9 @@ body.active { overflow: hidden; }
 
 .product .section-title { text-align: center; }
 
+.product-list { grid-template-columns: repeat(2, 1fr); }
+
+
 .filter-btn-list {
   margin-block: 20px 50px;
   display: flex;
@@ -579,7 +583,7 @@ body.active { overflow: hidden; }
 
 .product-card .card-action-btn {
   background-color: var(--white);
-  font-size: 22px;
+  font-size: 14px;
   padding: 12px;
   border-radius: 50%;
   transition: var(--transition-1);
@@ -595,18 +599,22 @@ body.active { overflow: hidden; }
 
 .product-card .badge {
   color: var(--white);
-  font-size: var(--fs-6);
+  font-size: 7px;
   font-weight: var(--fw-500);
-  width: 45px;
-  height: 45px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
-  line-height: 45px;
+  line-height: 25px;
   margin-block-end: 10px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .product-card .badge.orange { background-color: var(--red-orange-color-wheel); }
 
-.product-card .badge.cyan { background-color: var(--middle-blue-green); }
+.product-card .badge.cyan { background-color: rgb(66, 108, 4); }
 
 .product-card .card-badge {
   position: absolute;
@@ -634,7 +642,7 @@ body.active { overflow: hidden; }
   justify-content: center;
   gap: 15px;
   color: var(--granite-gray);
-  font-size: var(--fs-4);
+  font-size: 10px;
 }
 
 .product-card .card-price .del { color: var(--spanish-gray); }
@@ -714,17 +722,17 @@ body.active { overflow: hidden; }
 }
 
 .progress-fill.red {
-  background-color: hsl(357, 100%, 75%);
+  background-color: hsl(357, 86%, 51%);
   width: 96%;
 }
 
 .progress-fill.green {
-  background-color: hsl(173, 60%, 47%);
+  background-color: hsl(172, 84%, 15%);
   width: 87%;
 }
 
 .progress-fill.yellow {
-  background-color: hsl(42, 100%, 56%);
+  background-color: hsl(42, 94%, 37%);
   width: 75%;
 }
 
@@ -813,7 +821,7 @@ body.active { overflow: hidden; }
 
 .testimonials{
   background-color: var(--cultured);
-  border-radius: 300px 0;
+  border-radius: 230px 0;
 }
  
 .flex1{
@@ -1152,8 +1160,8 @@ textarea.input-field {
   right: 30px;
   background-color: var(--tan-crayola);
   color: var(--white);
-  font-size: 24px;
-  padding: 18px;
+  font-size: 18px;
+  padding: 12px;
   border-radius: 50%;
   z-index: 4;
   opacity: 0;
@@ -1387,6 +1395,13 @@ textarea.input-field {
   }
 
 
+  .product-card .badge {
+    font-size: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  
+
   /**
    * NEWSLETTER
    */
@@ -1401,6 +1416,8 @@ textarea.input-field {
   }
 
   .newsletter-card .card-content { margin-block-end: 0; }
+
+
 
 
 
